@@ -1,0 +1,20 @@
+---
+driver:
+  name: vagrant
+
+platforms:
+  - name: debian-7.6
+    driver_config:
+      box: chef/debian-7.6
+  #- name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+        - recipe[apt]
+        - recipe[blackfire]
+    attributes:
+        blackfire:
+            agent:
+                server-id: ''
+                server-token: ''

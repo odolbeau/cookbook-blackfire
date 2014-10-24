@@ -6,16 +6,6 @@
 
 Chef cookbook for [blackfire](https://blackfire.io/).
 
-### Platform
-
-* Debian
-* Ubuntu
-
-**Notes**: This cookbook has been tested on Debian 7.6. It may work on other
-platforms with or without modification. Please [report
-issues](https://github.com/odolbeau/cookbook-blackfire/issues) on any
-additional platforms so they can be added.
-
 ## Usage
 
 ### blackfire::default

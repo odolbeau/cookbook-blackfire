@@ -14,7 +14,7 @@ template 'blackfire-agent' do
   mode '0644'
 end
 
-apt_repository 'sensio-profiler' do
+apt_repository 'blackfire' do
   uri 'http://packages.blackfire.io/debian'
   distribution 'any'
   components ['main']

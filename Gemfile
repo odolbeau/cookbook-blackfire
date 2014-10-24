@@ -9,3 +9,7 @@ group :development do
   gem 'test-kitchen'
   gem 'kitchen-vagrant'
 end
+
+group :deployment do
+  gem 'stove'
+end

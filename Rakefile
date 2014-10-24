@@ -1,5 +1,6 @@
 require 'rubocop/rake_task'
 require 'foodcritic'
+require 'stove/rake_task'
 
 # Style tests. Rubocop and Foodcritic
 namespace :style do
@@ -31,6 +32,9 @@ begin
 rescue LoadError
   puts '>>>>> Kitchen gem not loaded, omitting tasks'
 end
+
+desc 'Deploy to supermarket'
+Stove::RakeTask.new
 
 # Default
 task default: ['style', 'integration:vagrant']

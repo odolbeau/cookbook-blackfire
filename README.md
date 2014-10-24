@@ -35,7 +35,8 @@ mandatory t start the blackfire agent.
 
 ## Supermarket share
 
-    knife supermarket share blackfire "Monitoring & Trending"
+You need [stove](http://sethvargo.github.io/stove/) to publish the cookbook on
+supermarket. Once it's done use `rake publish`
 
 License & Authors
 -----------------

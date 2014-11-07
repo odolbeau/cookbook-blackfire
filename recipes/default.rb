@@ -20,6 +20,7 @@ apt_repository 'blackfire' do
   components ['main']
   key 'https://packagecloud.io/gpg.key'
   action :add
+  only_if node['blackfire']['install_repository']
 end
 
 %w(

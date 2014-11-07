@@ -1,4 +1,4 @@
-# Chef cookbook for Blafire
+# Chef cookbook for Blackfire
 
 [![Build Status](https://travis-ci.org/odolbeau/cookbook-blackfire.png)](https://travis-ci.org/odolbeau/cookbook-blackfire)
 
@@ -28,10 +28,16 @@ node['blackfire']['agent']['server-id'] = 'my_server_id'
 node['blackfire']['agent']['server-token'] = 'my_server_token'
 ```
 
+You can avoid to add the blackfire official apt-repository:
+
+```ruby
+node['blackfire']['install_repository'] = false
+```
+
 ## Tests
 
 To launch tests, you need to use your `server-id` & `server-token` as it's
-mandatory t start the blackfire agent.
+mandatory to start the blackfire agent.
 
 ## Supermarket share
 

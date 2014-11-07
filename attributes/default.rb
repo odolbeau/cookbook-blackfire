@@ -1,3 +1,5 @@
+default['blackfire']['install_repository'] = true
+
 default['blackfire']['agent']['ca-cert'] = ''
 default['blackfire']['agent']['collector'] = 'https://blackfire.io'
 default['blackfire']['agent']['log-file'] = 'stderr'

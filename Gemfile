@@ -5,6 +5,7 @@ gem 'rubocop'
 gem 'rake'
 
 group :development do
+  gem 'chefspec'
   gem 'berkshelf'
   gem 'test-kitchen'
   gem 'kitchen-vagrant'

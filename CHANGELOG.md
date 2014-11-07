@@ -1,3 +1,8 @@
+# v1.0.4
+
+* Correct `only_if`
+* Add chefspec
+
 # v1.0.3
 
 * Add an attribute to avoid the repository installation.

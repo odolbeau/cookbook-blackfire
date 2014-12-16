@@ -1,7 +1,6 @@
 require 'serverspec'
 
-include Serverspec::Helper::Exec
-include Serverspec::Helper::DetectOS
+set :backend, :exec
 
 describe file('/etc/blackfire/agent') do
   it { should be_file }
@@ -11,7 +10,10 @@ describe file('/etc/blackfire/agent') do
 end
 
 describe service('blackfire-agent') do
-  it { should be_installed }
   it { should be_enabled }
   it { should be_running }
+end
+
+describe package('blackfire-agent') do
+  it { should be_installed }
 end

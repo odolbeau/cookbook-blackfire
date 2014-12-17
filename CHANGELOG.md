@@ -1,3 +1,7 @@
+# v1.0.5
+
+* Add support for redhat based distributions
+
 # v1.0.4
 
 * Correct `only_if`
